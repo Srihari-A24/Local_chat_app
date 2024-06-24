@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="registerContainer" style="display: block">
+      <form id="registerForm">
+        <h2>Register</h2>
+        <label for="registerUsername">Username</label>
+        <input type="text" id="registerUsername" required />
+        <label for="registerPassword">Password</label>
+        <input type="password" id="registerPassword" required />
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" required />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+    <div id="loginContainer" style="display: none">
+      <form id="loginForm">
+        <h2>Login</h2>
+        <label for="loginUsername">Username</label>
+        <input type="text" id="loginUsername" required />
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <div id="chatContainer" style="display: none">
+      <div>
+        <h2>Rooms</h2>
+        <div id="roomsList"></div>
+        <form id="createRoomForm">
+          <input
+            type="text"
+            id="newRoomName"
+            placeholder="New Room Name"
+            required
+          />
+          <button type="submit">Create Room</button>
+        </form>
+      </div>
+      <div>
+        <h2>Messages</h2>
+        <div id="messages"></div>
+        <form id="sendMessageForm">
+          <input type="hidden" id="roomId" />
+          <input type="text" id="message" placeholder="Your message" required />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>

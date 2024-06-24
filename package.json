@@ -1,0 +1,25 @@
+{
+  "name": "local-chat-app",
+  "version": "1.0.0",
+  "description": "Local Chat using Electron.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.0.2",
+    "electron-is-dev": "^3.0.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "^11.0.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
